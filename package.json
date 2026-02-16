@@ -1,10 +1,14 @@
 {
   "name": "trading-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "prepublishOnly": "npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
