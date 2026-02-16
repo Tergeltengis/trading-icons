@@ -5,6 +5,6 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App symbol="XAU" />
+    <App imageUrls={["/symbols/XAU.svg", "/symbols/XAU.svg"]} />
   </StrictMode>,
 );

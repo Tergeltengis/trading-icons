@@ -1,13 +1,11 @@
 import "./App.css";
 const App = ({
-  symbol,
+  imageUrls,
   theme = "light",
 }: {
-  symbol: string;
+  imageUrls: [string] | [string, string];
   theme?: "light" | "dark";
 }) => {
-  const imageUrls = symbol.split("_").map((image) => `/symbols/${image}.svg`);
-
   return (
     <div className="trading-icons">
       {imageUrls.length === 1 && (

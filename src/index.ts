@@ -2,6 +2,6 @@ export { default } from "./App";
 
 export type TradingIconsTheme = "light" | "dark";
 export type TradingIconsProps = {
-  symbol: string;
+  imageUrls: [string] | [string, string];
   theme?: TradingIconsTheme;
-};
+};  
