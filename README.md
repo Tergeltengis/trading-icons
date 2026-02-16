@@ -21,7 +21,7 @@ If you publish this package to npm and want the component to work the same way, 
 Example (copy icons into your app):
 
 ```bash
-cp -R node_modules/trading-icons/public/symbols ./public/symbols
+cp -R node_modules/trading-icons/dist/symbols ./public/symbols
 ```
 
 Then you can use them directly:
