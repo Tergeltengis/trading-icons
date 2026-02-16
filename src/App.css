@@ -1,0 +1,41 @@
+/* TradingIcons */
+.trading-icons {
+  position: relative;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+}
+
+.trading-icons__img {
+  position: absolute;
+  display: block;
+  border-radius: 9999px;
+  border: 2px solid Canvas;
+  box-sizing: border-box;
+}
+
+.trading-icons__img--single {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trading-icons__img--left {
+  left: 0;
+  bottom: 0;
+  z-index: 8;
+}
+
+.trading-icons__img--right {
+  top: 0;
+  right: 0;
+}
+
+.trading-icons__img--dark {
+  border-color: #000;
+}
+
+.trading-icons__img--light {
+  border-color: #fff;
+}
