@@ -1,6 +1,6 @@
 {
   "name": "trading-icons",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -10,7 +10,9 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./trading-icons.css": "./dist/trading-icons.css",
+    "./symbols/*": "./dist/symbols/*"
   },
   "sideEffects": [
     "**/*.css"

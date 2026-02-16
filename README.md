@@ -34,9 +34,9 @@ Then you can use them directly:
 
 The renderer component (see `src/App.tsx`) accepts:
 
-- **`symbol`**: `string`  
-  - single: `"BTC"`, `"XAU"`, `"AAPL"`, …
-  - pair: `"EUR_USD"`, `"BTC_USD"`, … (underscore-separated)
+- **`imageUrls`**: `[string] | [string, string]`
+  - single: `["/symbols/BTC.svg"]`
+  - pair: `["/symbols/EUR.svg", "/symbols/USD.svg"]`
 - **`theme`**: `"light" | "dark"` (default `"light"`)
 
 Usage:
@@ -47,11 +47,17 @@ import TradingIcons from "trading-icons";
 export function Example() {
   return (
     <>
-      <TradingIcons symbol="BTC" />
-      <TradingIcons symbol="EUR_USD" theme="dark" />
+      <TradingIcons imageUrls={["/symbols/BTC.svg"]} />
+      <TradingIcons imageUrls={["/symbols/EUR.svg", "/symbols/USD.svg"]} theme="dark" />
     </>
   );
 }
+```
+
+If you prefer not to rely on runtime style injection, you can also import the CSS explicitly once:
+
+```ts
+import "trading-icons/trading-icons.css";
 ```
 
 ## Available symbols
